@@ -1,0 +1,26 @@
+.root {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.square {
+  display: grid;
+  grid-template-columns: 3rem 3rem 3rem;
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid black;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+.props {
+  display: grid;
+  grid-gap: .5rem;
+  align-content: start;
+}
