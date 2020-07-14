@@ -1,16 +1,15 @@
-import {NEW_GAME, WALK} from '../constants';
+import {COUNT_WINNER_O, COUNT_WINNER_X, GET_WINNER, NEW_GAME, RESET_COUNTERS, WALK} from '../constants';
 
 const initialState = {
-    square: {
-        1: {value: null}, 2: {value: null}, 3: {value: null},
-        4: {value: null}, 5: {value: null}, 6: {value: null},
-        7: {value: null}, 8: {value: null}, 9: {value: null},
-    },
+    square: [
+        {id: 0, value: null}, {id: 1, value: null}, {id: 2, value: null},
+        {id: 3, value: null}, {id: 4, value: null}, {id: 5, value: null},
+        {id: 6, value: null}, {id: 7, value: null}, {id: 8, value: null},
+    ],
     currentGamer: 'X',
-};
-
-const clearValue = (obj) => {
-    Object.values(obj).map(item => item.value = null)
+    winStatus: null,
+    counterX: 0,
+    counterO: 0,
 };
 
 export default (state = initialState, action) => {
@@ -19,16 +18,44 @@ export default (state = initialState, action) => {
         case WALK:
             return {
                 ...state,
-                square: {
-                    ...state.square,
-                    [payload.id]: {...state.square[payload.id].value, value: state.currentGamer}
-                },
-                currentGamer: state.currentGamer === 'X'? 'O' : 'X'
+                square: state.square.map(item => {
+                    if (item.id === payload.id) {
+                        return {
+                            id: item.id,
+                            value: state.currentGamer
+                        }
+                    }
+                    return item
+                }),
+                currentGamer: state.currentGamer === 'X' ? 'O' : 'X'
             };
         case NEW_GAME:
             return {
                 ...state,
-                square: Object.values(state.square).map(item => item.value = null)
+                square: initialState.square,
+                currentGamer: 'X',
+                winStatus: null,
+            };
+        case GET_WINNER:
+            return {
+                ...state,
+                winStatus: payload.winner || 'Draw'
+            };
+        case COUNT_WINNER_X:
+            return {
+                ...state,
+                counterX: state.counterX + 1,
+            };
+        case COUNT_WINNER_O:
+            return {
+                ...state,
+                counterO: state.counterO + 1,
+            };
+        case RESET_COUNTERS:
+            return {
+                ...state,
+                counterX: 0,
+                counterO: 0,
             };
         default:
             return state

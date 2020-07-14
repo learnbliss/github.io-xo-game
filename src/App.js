@@ -1,15 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
 import Game from './components/Game';
+import TableGame from './components/TableGame';
+import {connect} from 'react-redux';
+import {counterOSelector, counterXSelector} from './redux/selectors';
+import PropTypes from 'prop-types';
 
-function App() {
+function App({counterX, counterO}) {
   return (
     <div className="App">
       <Game/>
+      {counterX !== 0 || counterO !== 0 ?
+          <TableGame/> : null}
     </div>
   );
 }
 
-export default App;
+Game.propTypes = {
+    counterX: PropTypes.number,
+    counterO: PropTypes.number,
+};
+
+export default connect((state) => ({
+    counterX: counterXSelector(state),
+    counterO: counterOSelector(state),
+}))(App);
