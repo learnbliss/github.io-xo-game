@@ -2,12 +2,12 @@
   "name": "xo-game",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://learnbliss.github.io/github.io-xo-game/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.1.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "eslint-plugin-immutable": "^1.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.1.3",
@@ -19,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app",
@@ -27,7 +29,6 @@
       "immutable"
     ],
     "rules": {
-      "immutable/no-let": 2,
       "immutable/no-this": 2,
       "immutable/no-mutation": 2
     }
@@ -43,5 +44,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-plugin-immutable": "^1.0.0",
+    "gh-pages": "^3.1.0"
   }
 }
