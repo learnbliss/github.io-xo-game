@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e1c0d68765a30d6f53091f563cbe998b",
+    "revision": "0015302b951b426743b113948194602b",
     "url": "/github.io-xo-game/index.html"
   },
   {
-    "revision": "1a3be9060f02bc3d06d3",
+    "revision": "fd09c949bac6150859a4",
     "url": "/github.io-xo-game/static/css/main.50d5ffe0.chunk.css"
   },
   {
-    "revision": "4d9249ae8a44d591d48b",
-    "url": "/github.io-xo-game/static/js/2.f56b9b43.chunk.js"
+    "revision": "9673f07c975ed8b1a795",
+    "url": "/github.io-xo-game/static/js/2.c356193e.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/github.io-xo-game/static/js/2.f56b9b43.chunk.js.LICENSE.txt"
+    "url": "/github.io-xo-game/static/js/2.c356193e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1a3be9060f02bc3d06d3",
-    "url": "/github.io-xo-game/static/js/main.3a65fa8d.chunk.js"
+    "revision": "fd09c949bac6150859a4",
+    "url": "/github.io-xo-game/static/js/main.b81aa16d.chunk.js"
   },
   {
     "revision": "f839cc6f77ae874d54b9",

@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/github.io-xo-game/static/css/main.50d5ffe0.chunk.css",
-    "main.js": "/github.io-xo-game/static/js/main.3a65fa8d.chunk.js",
-    "main.js.map": "/github.io-xo-game/static/js/main.3a65fa8d.chunk.js.map",
+    "main.js": "/github.io-xo-game/static/js/main.b81aa16d.chunk.js",
+    "main.js.map": "/github.io-xo-game/static/js/main.b81aa16d.chunk.js.map",
     "runtime-main.js": "/github.io-xo-game/static/js/runtime-main.45199dfb.js",
     "runtime-main.js.map": "/github.io-xo-game/static/js/runtime-main.45199dfb.js.map",
-    "static/js/2.f56b9b43.chunk.js": "/github.io-xo-game/static/js/2.f56b9b43.chunk.js",
-    "static/js/2.f56b9b43.chunk.js.map": "/github.io-xo-game/static/js/2.f56b9b43.chunk.js.map",
+    "static/js/2.c356193e.chunk.js": "/github.io-xo-game/static/js/2.c356193e.chunk.js",
+    "static/js/2.c356193e.chunk.js.map": "/github.io-xo-game/static/js/2.c356193e.chunk.js.map",
     "index.html": "/github.io-xo-game/index.html",
-    "precache-manifest.b9fac6da661d6f380a727cd50d7ae05f.js": "/github.io-xo-game/precache-manifest.b9fac6da661d6f380a727cd50d7ae05f.js",
+    "precache-manifest.b8f47cb35f53200dd07e78b5860bc4f1.js": "/github.io-xo-game/precache-manifest.b8f47cb35f53200dd07e78b5860bc4f1.js",
     "service-worker.js": "/github.io-xo-game/service-worker.js",
     "static/css/main.50d5ffe0.chunk.css.map": "/github.io-xo-game/static/css/main.50d5ffe0.chunk.css.map",
-    "static/js/2.f56b9b43.chunk.js.LICENSE.txt": "/github.io-xo-game/static/js/2.f56b9b43.chunk.js.LICENSE.txt"
+    "static/js/2.c356193e.chunk.js.LICENSE.txt": "/github.io-xo-game/static/js/2.c356193e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.45199dfb.js",
-    "static/js/2.f56b9b43.chunk.js",
+    "static/js/2.c356193e.chunk.js",
     "static/css/main.50d5ffe0.chunk.css",
-    "static/js/main.3a65fa8d.chunk.js"
+    "static/js/main.b81aa16d.chunk.js"
   ]
 }
